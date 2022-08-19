@@ -37,3 +37,35 @@ html = """
 
 console.log html
 
+# Objects and Arrays
+names = ['angel', 'carlos', 'juan', 'pedro']
+singers = {Maluma: 'Pop', Elvis: 'Rock'}
+
+bitList = [
+  1, 0, 1
+  0, 0, 0
+  1, 0, 1
+]
+
+family =
+  cousin:
+    name: 'Carla'
+    age: 30
+  mother:
+    name: 'Lourdes'
+    age: 60
+
+console.log names
+console.log singers
+console.log bitList
+console.log family
+
+# Shortcut Objects
+name = 'Angel'
+age = 25
+job = 'Software Developer'
+married = false
+
+me = {name, age, job, married}
+
+console.log me
