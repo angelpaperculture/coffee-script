@@ -133,3 +133,57 @@ user =
 
 currentUser = {user..., status: 'no married'}
 console.log currentUser
+
+# Loops and Comprehensions
+
+eat = (food) -> console.log "#{food} eaten."
+eat food for food in ['toast', 'cheese', 'wine']
+
+courses = ['greens', 'caviar', 'truffles', 'roast', 'cake']
+menu = (i, dish) -> console.log "Menu Item #{i}: #{dish}"
+menu i + 1, dish for dish, i in courses
+
+foods = ['broccoli', 'spinach', 'chocolate']
+eat food for food in foods when food isnt 'chocolate'
+
+# Range
+countdown = (num for num in [10..1])
+console.log countdown
+
+evens = (x for x in [0..10] by 2)
+console.log evens
+
+# Iterate over objects
+yearsOld = max: 10, ida: 9, tim: 11
+
+ages = for child, age of yearsOld
+  "#{child} is #{age}"
+
+console.log ages
+
+ages = for own key, value of yearsOld
+  "#{key} is #{value}"
+
+console.log ages
+
+# While
+
+#if studyingEconomics
+#  buy()  while supply > demand
+#  sell() until supply > demand
+
+num = 6
+lyrics = while num -= 1
+  "#{num} little monkeys, jumping on the bed.
+    One fell out and bumped his head."
+
+console.log lyrics
+
+# Call claused functions into others DO
+
+list = ['.DS_Store', 'Thumbs.db', 'ehthumbs.db', 'doc.txt', 'main.ts', 'db.mysql']
+
+for filename in list
+  do (filename) ->
+    if filename not in ['.DS_Store', 'Thumbs.db', 'ehthumbs.db']
+      console.log filename
