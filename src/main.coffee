@@ -2,23 +2,23 @@
 square = (x) -> x * x
 cube = (x) -> square x * x
 
-console.log square 7
-console.log cube 9
+#console.log square 7
+#console.log cube 9
 
 printName = (name = "Angel") ->
   "Welcome #{name} :)"
 
-console.log printName 'Carlos'
-console.log printName()
+#console.log printName 'Carlos'
+#console.log printName()
 
 # Strings
 author = 'Angel'
 quote = "A picture is more than this ... #{author}"
 sentence = "#{22/7} is a godd aproximation to pi number"
 
-console.log author
-console.log quote
-console.log sentence
+#console.log author
+#console.log quote
+#console.log sentence
 
 lorem = "lorem
 sdafsdaf
@@ -27,7 +27,7 @@ sdfsfsfd
   sdafsdfsadf
   asdfsadfsdf"
 
-console.log lorem
+#console.log lorem
 
 html = """
       map --> how to mke money
@@ -35,7 +35,7 @@ html = """
       step 3 -> life is hapiness
       """
 
-console.log html
+#console.log html
 
 # Objects and Arrays
 names = ['angel', 'carlos', 'juan', 'pedro']
@@ -55,10 +55,10 @@ family =
     name: 'Lourdes'
     age: 60
 
-console.log names
-console.log singers
-console.log bitList
-console.log family
+#console.log names
+#console.log singers
+#console.log bitList
+#console.log family
 
 # Shortcut Objects
 name = 'Angel'
@@ -68,7 +68,7 @@ married = false
 
 me = {name, age, job, married}
 
-console.log me
+#console.log me
 
 # Comments
 
@@ -79,3 +79,5 @@ console.log me
   lorem lorem lorem
   lore lorem lorem
 ###
+
+#
