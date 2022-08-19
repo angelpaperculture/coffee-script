@@ -1,0 +1,9 @@
+{
+  "name": "coffee-script",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "coffeescript": "^2.7.0"
+  }
+}
