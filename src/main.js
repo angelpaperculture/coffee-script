@@ -66,5 +66,12 @@
     job: job,
     married: married
   };
-  console.log(me);
+  console.log(me); // Comments
+  // one line comment
+
+  /*
+    Multiple line Comment
+    lorem lorem lorem
+    lore lorem lorem
+  */
 }).call(void 0);

@@ -69,3 +69,13 @@ married = false
 me = {name, age, job, married}
 
 console.log me
+
+# Comments
+
+# one line comment
+
+###
+  Multiple line Comment
+  lorem lorem lorem
+  lore lorem lorem
+###
