@@ -80,4 +80,15 @@ me = {name, age, job, married}
   lore lorem lorem
 ###
 
-#
+# If, else, conditionals
+name = 'Angel' if true
+console.log name
+
+if name = 'Angel' and name.length > 2
+  console.log 'I like my name'
+else
+  console.log ':('
+
+name = if 'Angel'.length > 2 then 'Angel :)' else 'Angel :('
+console.log name
+

@@ -64,13 +64,30 @@
     age: age,
     job: job,
     married: married
-  }; //console.log me
-  // Comments
-  // one line comment
+  };
 
-  /*
-    Multiple line Comment
-    lorem lorem lorem
-    lore lorem lorem
-  */
+  if (true) {
+    //console.log me
+    // Comments
+    // one line comment
+
+    /*
+      Multiple line Comment
+      lorem lorem lorem
+      lore lorem lorem
+    */
+    // If, else, conditionals
+    name = 'Angel';
+  }
+
+  console.log(name);
+
+  if (name = 'Angel' && name.length > 2) {
+    console.log('I like my name');
+  } else {
+    console.log(':(');
+  }
+
+  name = 'Angel'.length > 2 ? 'Angel :)' : 'Angel :(';
+  console.log(name);
 }).call(void 0);
