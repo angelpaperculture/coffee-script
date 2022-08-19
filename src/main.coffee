@@ -187,3 +187,19 @@ for filename in list
   do (filename) ->
     if filename not in ['.DS_Store', 'Thumbs.db', 'ehthumbs.db']
       console.log filename
+
+
+# Array slicing and splicing with ranges
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+start   = numbers[0..2]
+middle  = numbers[3...-2]
+end     = numbers[-2..]
+copy    = numbers[..]
+
+console.log start, middle, end, copy
+
+numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+numbers[3..6] = [-3, -4, -5, -6]
+
+console.log numbers

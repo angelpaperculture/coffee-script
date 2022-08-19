@@ -29,12 +29,14 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
       bitList,
       child,
       contenders,
+      copy,
       countdown,
       courses,
       cube,
       currentUser,
       dish,
       eat,
+      end,
       evens,
       family,
       filename,
@@ -59,24 +61,29 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
       married,
       me,
       menu,
+      middle,
       name,
       names,
       num,
+      numbers,
       popular,
       printName,
       quote,
       ref,
+      ref1,
       rest,
       sentence,
       silver,
       singers,
       square,
+      start,
       unwanted,
       user,
       value,
       x,
       yearsOld,
-      hasProp = {}.hasOwnProperty;
+      hasProp = {}.hasOwnProperty,
+      splice = [].splice;
 
   square = function square(x) {
     return x * x;
@@ -315,5 +322,16 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
         return console.log(filename);
       }
     })(filename);
-  }
+  } // Array slicing and splicing with ranges
+
+
+  numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  start = numbers.slice(0, 3);
+  middle = numbers.slice(3, -2);
+  end = numbers.slice(-2);
+  copy = numbers.slice(0);
+  console.log(start, middle, end, copy);
+  numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+  splice.apply(numbers, [3, 4].concat(ref1 = [-3, -4, -5, -6])), ref1;
+  console.log(numbers);
 }).call(void 0);
