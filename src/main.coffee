@@ -92,3 +92,44 @@ else
 name = if 'Angel'.length > 2 then 'Angel :)' else 'Angel :('
 console.log name
 
+# Rest parameter/ Spread Syntax
+gold = silver =  rest = 'unknown'
+
+awardMedals = (first, second, others...) ->
+  gold = first
+  silver = second
+  rest = others
+
+contenders = [
+  "Michael Phelps"
+  "Liu Xiang"
+  "Yao Ming"
+  "Allyson Felix"
+  "Shawn Johnson"
+  "Roman Sebrle"
+  "Guo Jingjing"
+  "Tyson Gay"
+  "Asafa Powell"
+  "Usain Bolt"
+]
+
+awardMedals contenders...
+
+console.log """
+Gold: #{gold}
+Silver: #{silver}
+The Field: #{rest.join ' - '}
+"""
+
+popular  = ['pepperoni', 'sausage', 'cheese']
+unwanted = ['anchovies', 'olives']
+
+all = [popular..., unwanted..., 'mushrooms']
+console.log all
+
+user =
+  name: 'Angel'
+  job: 'Software Developer'
+
+currentUser = {user..., status: 'no married'}
+console.log currentUser
