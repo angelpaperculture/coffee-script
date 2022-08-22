@@ -75,3 +75,13 @@ console.log zip
 #a?(b, c)  	              returns the result of calling a (with arguments b and c) if a is in scope and callable; otherwise, undefined
 #a? b, c
 #a ?= b	                  assigns the value of b to a if a is not in scope or if a == null; produces the new value of a
+
+# Chaining Function Calls
+
+$ 'body'
+.click (e) ->
+  $ '.box'
+    .fadeIn 'fast'
+    .addClass 'show'
+  .css 'background', 'white'
+
