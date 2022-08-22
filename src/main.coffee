@@ -48,3 +48,30 @@ console.log globals
 #if car.speed < limit then accelerate()
 #winner = yes if pick in [47, 92, 13]
 #print inspect "My name is #{@name}"
+
+
+# The existential Operator
+
+solipsism = (true if mind? and not world?) ? 14
+speed = 0
+speed ?= 15
+footprints = yeti ? "bear"
+
+console.log solipsism, speed, footprints
+
+major = 'Computer Science'
+unless major?
+  signUpForClass 'Introduction to Wines'
+
+lottery = {}
+zip = lottery.drawWinner?().address?.zipcode
+
+console.log zip
+
+#a?	                      tests that a is in scope and a != null
+#a ? b	                  returns a if a is in scope and a != null; otherwise, b
+#a?.b                     returns a.b if a is in scope and a != null; otherwise, undefined
+#a?['b']
+#a?(b, c)  	              returns the result of calling a (with arguments b and c) if a is in scope and callable; otherwise, undefined
+#a? b, c
+#a ?= b	                  assigns the value of b to a if a is not in scope or if a == null; produces the new value of a
